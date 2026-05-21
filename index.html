@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC HIKMAHBUDHI Jakarta Utara — Himpunan Mahasiswa Buddhis Indonesia</title>
+  <meta name="description" content="Website resmi Pimpinan Cabang HIKMAHBUDHI Jakarta Utara. Himpunan Mahasiswa Buddhis Indonesia cabang Jakarta Utara — Appamadena Sampatdetha.">
+  <meta name="keywords" content="HIKMAHBUDHI, Jakarta Utara, Mahasiswa Buddhis, Organisasi Buddhis, PC HIKMAHBUDHI JAKUT">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%23086ad8'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>H</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       PRELOADER (Beakai-style)
+       ============================================================ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-spinner"></div>
+      <p>HIKMAHBUDHI</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TOP BAR
+       ============================================================ -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="inner">
+        <div class="header-info">
+          <span><i class="fas fa-map-marker-alt"></i> Jl. Yos Sudarso, Tanjung Priok, Jakarta Utara</span>
+          <span><a href="tel:+6281234567890"><i class="fas fa-phone"></i> 0812-3456-7890</a></span>
+          <span><a href="mailto:hikmahbudhi.jakut@gmail.com"><i class="fas fa-envelope"></i> hikmahbudhi.jakut@gmail.com</a></span>
+        </div>
+        <div class="header-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <div id="sticky-header" class="header-menu-area">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">
+            <div class="logo-icon">☸</div>
+            <div class="logo-text">
+              PC HIKMAHBUDHI JAKUT
+              <span>Jakarta Utara</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav>
+          <ul class="main-menu" id="main-menu">
+            <li class="active"><a href="#beranda">Beranda</a></li>
+            <li class="has-dropdown">
+              <a href="#profil">Profil <i class="fas fa-chevron-down caret"></i></a>
+              <ul class="sub-menu">
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#">Sejarah</a></li>
+                <li><a href="#">Visi dan Misi</a></li>
+                <li><a href="#">Susunan Pengurus</a></li>
+                <li><a href="#">Ikrar HIKMAHBUDHI</a></li>
+              </ul>
+            </li>
+            <li><a href="#berita">Berita</a></li>
+            <li class="has-dropdown">
+              <a href="#badan-otonom">Badan Otonom <i class="fas fa-chevron-down caret"></i></a>
+              <ul class="sub-menu">
+                <li><a href="#">Majalah HIKMAHBUDHI</a></li>
+                <li><a href="#">Pagar Budaya</a></li>
+                <li><a href="#">Lembaga Pemberdayaan Masyarakat</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Opini</a></li>
+            <li><a href="#">Kaderisasi</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+
+        <!-- Search Button -->
+        <button class="nav-search-btn" id="search-open" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SEARCH OVERLAY (Beakai fullscreen search)
+       ============================================================ -->
+  <div class="search-wrap" id="search-wrap">
+    <button class="search-close" id="search-close" aria-label="Close search"><i class="fas fa-times"></i></button>
+    <div class="search-inner">
+      <form action="#" method="get">
+        <div class="search-field-holder">
+          <input type="search" name="s" class="main-search-input" placeholder="Cari kata kunci...">
+          <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MOBILE SIDEBAR (MeanMenu + MetisMenu style)
+       ============================================================ -->
+  <aside class="mobile-sidebar" id="mobile-sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <a href="#">
+          <div class="logo-icon" style="width:36px;height:36px;font-size:1rem;border-radius:8px;">☸</div>
+          <div class="logo-text" style="font-size:1rem;">PC HIKMAHBUDHI</div>
+        </a>
+      </div>
+      <button class="close-btn" id="close-sidebar" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="#beranda">Beranda</a></li>
+      <li>
+        <a href="#profil">
+          Profil
+          <button class="toggle-sub"><i class="fas fa-chevron-down"></i></button>
+        </a>
+        <ul class="mobile-sub">
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#">Sejarah</a></li>
+          <li><a href="#">Visi dan Misi</a></li>
+          <li><a href="#">Susunan Pengurus</a></li>
+          <li><a href="#">Ikrar HIKMAHBUDHI</a></li>
+        </ul>
+      </li>
+      <li><a href="#berita">Berita</a></li>
+      <li>
+        <a href="#badan-otonom">
+          Badan Otonom
+          <button class="toggle-sub"><i class="fas fa-chevron-down"></i></button>
+        </a>
+        <ul class="mobile-sub">
+          <li><a href="#">Majalah HIKMAHBUDHI</a></li>
+          <li><a href="#">Pagar Budaya</a></li>
+          <li><a href="#">Lembaga Pemberdayaan Masyarakat</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Opini</a></li>
+      <li><a href="#">Kaderisasi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ============================================================
+       HERO SLIDER (Owl Carousel style with 3 slides)
+       ============================================================ -->
+  <section id="beranda">
+    <div class="hero-slider">
+      <!-- Decorative shapes -->
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active" style="background-image: url('assets/images/hero-banner.png');">
+        <div class="container">
+          <div class="hero-content animate-in">
+            <div class="hero-badge">
+              <i class="fas fa-dharmachakra"></i>
+              Appamadena Sampatdetha
+            </div>
+            <h1>
+              Pimpinan Cabang<br>
+              <span>HIKMAHBUDHI</span><br>
+              Jakarta Utara
+            </h1>
+            <p>
+              Himpunan Mahasiswa Buddhis Indonesia cabang Jakarta Utara — wadah pengembangan diri, 
+              pengabdian masyarakat, dan perjuangan generasi muda Buddhis yang unggul, 
+              harmonis, dan berkontribusi bagi bangsa.
+            </p>
+            <div class="hero-buttons">
+              <a href="#tentang" class="bt-btn btn-white">
+                Tentang Kami <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#berita" class="bt-btn btn-outline" style="color:#fff; border-color: rgba(255,255,255,.4);">
+                Berita Terbaru <i class="fas fa-newspaper"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide" style="background-image: url('assets/images/about-section.png');">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fas fa-dharmachakra"></i>
+              Organisasi Mahasiswa Buddhis
+            </div>
+            <h1>
+              Mencetak Generasi<br>
+              <span>Unggul & Berkarakter</span><br>
+              Sejak 1971
+            </h1>
+            <p>
+              Lebih dari 54 tahun mengabdi untuk kemajuan mahasiswa Buddhis Indonesia.
+              Bersama kita bangun generasi yang cerdas, bermoral, dan berdedikasi tinggi.
+            </p>
+            <div class="hero-buttons">
+              <a href="#badan-otonom" class="bt-btn btn-white">
+                Badan Otonom <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#kontak" class="bt-btn btn-outline" style="color:#fff; border-color: rgba(255,255,255,.4);">
+                Hubungi Kami <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" style="background-image: url('assets/images/news-1.png');">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fas fa-dharmachakra"></i>
+              Sabbe Satta Bhavantu Sukhitata
+            </div>
+            <h1>
+              Kaderisasi &<br>
+              <span>Pemberdayaan</span><br>
+              Masyarakat
+            </h1>
+            <p>
+              Program unggulan kami dalam membentuk kader pemuda Buddhis yang siap berkarya 
+              dan memberikan dampak positif bagi masyarakat dan bangsa Indonesia.
+            </p>
+            <div class="hero-buttons">
+              <a href="#berita" class="bt-btn btn-white">
+                Lihat Kegiatan <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="slider-controls">
+        <button class="slider-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Slider Dots -->
+      <div class="slider-dots"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS / COUNTER (WOW animated)
+       ============================================================ -->
+  <section id="stats-section" class="stats-section">
+    <div class="container">
+      <div class="stats-grid reveal-stagger reveal">
+        <div class="stat-item" data-wow="fadeInUp" data-wow-delay="0s">
+          <i class="fas fa-users"></i>
+          <div class="count" data-target="250" data-suffix="+">0</div>
+          <p>Anggota Aktif</p>
+        </div>
+        <div class="stat-item" data-wow="fadeInUp" data-wow-delay=".1s">
+          <i class="fas fa-calendar-check"></i>
+          <div class="count" data-target="54">0</div>
+          <p>Tahun Berdiri</p>
+        </div>
+        <div class="stat-item" data-wow="fadeInUp" data-wow-delay=".2s">
+          <i class="fas fa-hands-helping"></i>
+          <div class="count" data-target="120" data-suffix="+">0</div>
+          <p>Kegiatan Terlaksana</p>
+        </div>
+        <div class="stat-item" data-wow="fadeInUp" data-wow-delay=".3s">
+          <i class="fas fa-university"></i>
+          <div class="count" data-target="15">0</div>
+          <p>Komisariat Kampus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TENTANG KAMI / ABOUT
+       ============================================================ -->
+  <section id="tentang" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image Side -->
+        <div class="about-image reveal reveal-left">
+          <img src="assets/images/about-section.png" alt="Kegiatan HIKMAHBUDHI Jakarta Utara">
+          <div class="experience-badge">
+            <div class="number">54+</div>
+            <span>Tahun<br>Pengabdian</span>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="about-text reveal reveal-right">
+          <div class="section-title">
+            <span class="sub-title">Tentang Kami</span>
+            <h2>Selamat Datang di <span>PC HIKMAHBUDHI</span> Jakarta Utara</h2>
+          </div>
+          <p>
+            HIKMAHBUDHI (Himpunan Mahasiswa Buddhis Indonesia) berdiri pada tanggal 16 Mei 1971. 
+            Sebagai organisasi kemahasiswaan Buddhis, kami bergerak di bidang sosial kemasyarakatan 
+            dan kebangsaan. Pimpinan Cabang Jakarta Utara hadir sebagai ujung tombak gerakan 
+            mahasiswa Buddhis di wilayah Jakarta Utara.
+          </p>
+          <p>
+            Kami percaya bahwa generasi muda Buddhis memiliki peran penting dalam membangun bangsa 
+            yang harmonis dan damai. Melalui berbagai program kaderisasi, sosial, dan kebudayaan, 
+            PC HIKMAHBUDHI JAKUT terus berupaya mencetak pemuda yang unggul dan berkarakter.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <i class="fas fa-check"></i>
+              Kaderisasi pemuda Buddhis yang berkualitas dan berkarakter
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              Pengabdian masyarakat di wilayah Jakarta Utara
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              Dialog kebangsaan dan kerukunan antar umat beragama
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              Pemberdayaan potensi mahasiswa melalui program kreatif
+            </li>
+          </ul>
+          <a href="#" class="bt-btn">
+            Selengkapnya <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SAMBUTAN KETUA
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2 data-wow="fadeInDown">Sambutan Ketua PC HIKMAHBUDHI Jakarta Utara</h2>
+        <p data-wow="fadeInUp" data-wow-delay=".2s">
+          <em>"Namo Buddhaya, Amitofo — Nammo Sangyang Adibuddhaya."</em><br><br>
+          Dengan penuh rasa syukur, saya menyampaikan salam hangat kepada seluruh anggota, 
+          sahabat, dan masyarakat. Organisasi ini adalah ruang pembelajaran, pengabdian, 
+          dan perjuangan bagi mahasiswa Buddhis di Jakarta Utara. 
+          Mari bersama kita wujudkan generasi muda Buddhis yang unggul dalam ilmu pengetahuan 
+          dan berperan aktif dalam pembangunan bangsa.
+        </p>
+        <p style="margin-bottom:5px;"><strong style="color:#d2a98e;">"Sabbe satta bhavantu sukhitata — Namo Buddhaya"</strong></p>
+        <a href="#" class="bt-btn btn-white" style="margin-top: 15px;" data-wow="zoomIn" data-wow-delay=".4s">
+          Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BADAN OTONOM / SERVICES
+       ============================================================ -->
+  <section id="badan-otonom" class="services-section">
+    <div class="container">
+      <div class="section-title text-center reveal">
+        <span class="sub-title">Badan Otonom</span>
+        <h2>Lembaga di Bawah <span>HIKMAHBUDHI</span></h2>
+        <p>Tiga badan otonom yang bergerak dalam bidang kebudayaan, media, dan pemberdayaan masyarakat.</p>
+      </div>
+
+      <div class="services-grid reveal-stagger reveal">
+        <!-- Card 1 -->
+        <div class="service-card" data-wow="fadeInUp" data-wow-delay="0s">
+          <div class="icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3><a href="#">Majalah HIKMAHBUDHI</a></h3>
+          <p>Mewadahi suara mahasiswa dan pemuda dalam mengembangkan kepedulian sosial serta memberikan pencerahan wawasan kebangsaan.</p>
+          <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card" data-wow="fadeInUp" data-wow-delay=".15s">
+          <div class="icon">
+            <i class="fas fa-landmark"></i>
+          </div>
+          <h3><a href="#">Pagar Budaya</a></h3>
+          <p>Menjaga, melindungi, dan melestarikan warisan budaya masyarakat dari pengaruh luar melalui nilai-nilai kearifan lokal.</p>
+          <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" data-wow="fadeInUp" data-wow-delay=".3s">
+          <div class="icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3><a href="#">Lembaga Pemberdayaan Masyarakat</a></h3>
+          <p>Mendorong dan memfasilitasi partisipasi masyarakat dalam pembangunan melalui program-program pemberdayaan.</p>
+          <a href="#" class="read-more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BERITA / NEWS
+       ============================================================ -->
+  <section id="berita" class="news-section">
+    <div class="container">
+      <div class="section-title text-center reveal">
+        <span class="sub-title">News</span>
+        <h2>Berita & Kegiatan <span>Terbaru</span></h2>
+        <p>Ikuti informasi terkini seputar kegiatan, kaderisasi, dan program kerja PC HIKMAHBUDHI Jakarta Utara.</p>
+      </div>
+
+      <div class="news-grid reveal-stagger reveal">
+        <!-- News Card 1 -->
+        <div class="news-card" data-wow="fadeInUp" data-wow-delay="0s">
+          <div class="card-img">
+            <img src="assets/images/news-1.png" alt="Seminar Kebangsaan HIKMAHBUDHI">
+            <div class="date-badge">16<br>Mei</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fas fa-user"></i> Admin</span>
+              <span><i class="fas fa-folder"></i> Kegiatan</span>
+            </div>
+            <h3><a href="#">HIKMAHBUDHI 55 Tahun: Atta Dipa Bhava — Kalyanamitta dan Tantangan Level Up</a></h3>
+            <p>Peringatan hari jadi HIKMAHBUDHI ke-55 tahun dengan tema semangat kemandirian dan persahabatan spiritual menuju organisasi yang lebih kuat.</p>
+          </div>
+        </div>
+
+        <!-- News Card 2 -->
+        <div class="news-card" data-wow="fadeInUp" data-wow-delay=".15s">
+          <div class="card-img">
+            <img src="assets/images/news-2.png" alt="Meditasi bersama HIKMAHBUDHI">
+            <div class="date-badge">10<br>Apr</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fas fa-user"></i> Admin</span>
+              <span><i class="fas fa-folder"></i> Kaderisasi</span>
+            </div>
+            <h3><a href="#">Pekan Orientasi HIKMAHBUDHI XII: Membentuk Kader Muda yang Berkarakter</a></h3>
+            <p>Kegiatan kaderisasi tahunan untuk mencetak generasi penerus organisasi yang tangguh, berkarakter, dan berjiwa sosial tinggi.</p>
+          </div>
+        </div>
+
+        <!-- News Card 3 -->
+        <div class="news-card" data-wow="fadeInUp" data-wow-delay=".3s">
+          <div class="card-img">
+            <img src="assets/images/news-3.png" alt="Bakti Sosial HIKMAHBUDHI">
+            <div class="date-badge">25<br>Mar</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fas fa-user"></i> Admin</span>
+              <span><i class="fas fa-folder"></i> Sosial</span>
+            </div>
+            <h3><a href="#">Bakti Sosial PC HIKMAHBUDHI JAKUT Bersama Masyarakat Tanjung Priok</a></h3>
+            <p>Kegiatan bakti sosial dalam rangka pengabdian masyarakat berupa pembagian sembako dan bersih-bersih lingkungan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA — Lokasi Cabang
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>Lokasi Cabang HIKMAHBUDHI Jakarta Utara</h2>
+        <p>Temukan lokasi sekretariat dan komisariat-komisariat kami yang tersebar di wilayah Jakarta Utara.</p>
+        <a href="#" class="bt-btn btn-white">
+          <i class="fas fa-map-marker-alt"></i> Lihat Lokasi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="kontak">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: About -->
+          <div class="footer-widget" data-wow="fadeInUp" data-wow-delay="0s">
+            <h4 class="footer-title">PC HIKMAHBUDHI JAKUT</h4>
+            <div class="footer-text">
+              <p>
+                HIKMAHBUDHI merupakan singkatan dari Himpunan Mahasiswa Buddhis Indonesia,
+                berdiri pada tanggal 16 Mei 1971. Bergerak di bidang sosial kemasyarakatan 
+                dan kebangsaan. Cabang Jakarta Utara hadir melayani mahasiswa Buddhis 
+                di wilayah Jakarta Utara dan sekitarnya.
+              </p>
+            </div>
+            <div class="footer-subscribe">
+              <input type="email" placeholder="Masukkan email Anda" aria-label="Email untuk berlangganan">
+              <button type="button" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-widget" data-wow="fadeInUp" data-wow-delay=".1s">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#berita">Berita</a></li>
+              <li><a href="#badan-otonom">Badan Otonom</a></li>
+              <li><a href="#">Kaderisasi</a></li>
+              <li><a href="#">Opini</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Recent Posts -->
+          <div class="footer-widget" data-wow="fadeInUp" data-wow-delay=".2s">
+            <h4 class="footer-title">Berita Terbaru</h4>
+            <ul class="footer-links">
+              <li><a href="#">HIKMAHBUDHI 55 Tahun: Atta Dipa Bhava</a></li>
+              <li><a href="#">Pekan Orientasi HIKMAHBUDHI XII</a></li>
+              <li><a href="#">Bakti Sosial di Tanjung Priok</a></li>
+              <li><a href="#">Audiensi dengan Bimas Buddha</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Info -->
+          <div class="footer-widget" data-wow="fadeInUp" data-wow-delay=".3s">
+            <h4 class="footer-title">Hubungi Kami</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span>Alamat</span>
+                  Jl. Yos Sudarso No. 123,<br>
+                  Tanjung Priok, Jakarta Utara,<br>
+                  DKI Jakarta 14320
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span>Telepon</span>
+                  +62 812-3456-7890
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  hikmahbudhi.jakut@gmail.com
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <div>
+                  <span>Jam Operasional</span>
+                  Senin – Sabtu: 09.00 – 17.00
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright-area">
+      <div class="container">
+        <p>
+          Copyright &copy; 2024 <a href="#">PC HIKMAHBUDHI Jakarta Utara</a>. 
+          Himpunan Mahasiswa Buddhis Indonesia. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollUp" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
